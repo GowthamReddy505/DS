@@ -1,5 +1,11 @@
 
 
+class Node 
+{
+    int data;
+    Node next;
+}
+
  class LinkedList 
 {
 	Node head;
@@ -88,6 +94,20 @@
 		System.out.println(node.data);
 	}
 }
+ class Main 
+ {
+     public static void main(String[] args)
+     {
+         LinkedList l=new LinkedList();
+         l.insert(11);
+         l.insert(12);
+         l.insertAtStart(34);
+         l.show();
+         
+      }
+ }
+
+
 
 
 
