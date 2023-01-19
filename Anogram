@@ -1,0 +1,43 @@
+import java.util.Arrays;
+class Main 
+{
+    public static void main(String[] args)
+    {
+        String s1="Brog";
+         String s2="Grob";
+        
+        String l1=s1.toLowerCase();
+        String l2=s2.toLowerCase();
+        
+        if(s1.length()!=s2.length())
+        {
+            System.out.println("not the anogram");
+            
+        }
+        else{
+            
+            char string1[]=l1.toCharArray();
+            char string2[]=l2.toCharArray();
+            
+            Arrays.sort(string1);
+            Arrays.sort(string2);
+           // System.out.println(string1);
+           //System.out.println(string2);
+           if(Arrays.equals(string1,string2)==true)
+           {
+               System.out.println("its Anogram");
+           }
+               else
+               {
+                   System.out.print("not Anogram");
+               }
+               
+           }
+            
+        }
+    
+        
+        
+        
+        
+    }
