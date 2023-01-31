@@ -1,0 +1,26 @@
+class Main 
+{
+    public static void main(String[] args)
+    {
+        String s="FUN";
+        //the possible subsets n*(n+1)/2
+        int n=s.length();
+        String string[]=new String[n*(n+1)/2];
+        int temp=0;
+        
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i;j<n;j++)
+            {
+                string[temp]=s.substring(i,j+1);
+                temp++;
+            }
+        }
+        
+        System.out.println("The  subsets of the String");
+        for(int k=0;k<string.length;k++)
+        {
+            System.out.println(string[k]);
+        }
+    }
+} 
