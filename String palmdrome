@@ -1,0 +1,28 @@
+import java.util.*;
+class Main 
+
+{
+    public static void main(String[] args)
+    {
+       // String s="madam";
+        //System.out.println(s.length();
+        Scanner s=new Scanner(System.in);
+        String s1=s.nextLine();
+        
+        String rev="";
+        for(int i=s1.length()-1;i>=0;i--)
+        {
+            char c=s1.charAt(i);
+            rev=rev+c;
+        }
+        if(rev==s1)
+        {
+            System.out.println("palmdrome");
+        }
+        else
+        {
+            System.out.println("not palmdrome");
+        }
+        
+    }
+}
