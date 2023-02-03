@@ -1,0 +1,27 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String[] args)
+    {
+        String s[]={"gowytha","reddy","max","jac","pen","paper"};
+        System.out.println("enter the search element");
+        Scanner ob=new Scanner(System.in);
+        String e=ob.nextLine();
+        int temp=0;
+        
+        for(int i=0;i<s.length;i++)
+        //equals inbuilt function
+        {
+            if(s[i].equals(e))
+            {
+                System.out.print("the element is found");
+                temp++;
+            }
+        }
+        
+        if(temp==0)
+        {
+            System.out.println("sorry no such element");
+        }
+    }
+}
